@@ -1,0 +1,101 @@
+id,customer_name,age,gender,region,occupation,purchase_amount,loyalty_program,preferred_category,delivery_preference
+1,Alice Thompson,25,Female,North,Engineer,150.75,Yes,Electronics,Express
+2,Robert Lee,32,Male,South,Teacher,89.50,No,Clothing,Standard
+3,Emily Chen,28,Female,West,Designer,220.30,Yes,Home Decor,Express
+4,Michael Patel,45,Male,East,Manager,175.20,No,Electronics,Standard
+5,Sophia Nguyen,19,Female,North,Student,65.10,Yes,Books,Express
+6,James Wilson,37,Male,South,Doctor,300.80,No,Clothing,Standard
+7,Olivia Brown,29,Female,West,Analyst,120.45,Yes,Home Decor,Express
+8,William Garcia,52,Male,East,Consultant,200.60,No,Electronics,Standard
+9,Ava Martinez,23,Female,North,Artist,95.25,Yes,Books,Express
+10,Liam Davis,41,Male,South,Lawyer,180.90,No,Clothing,Standard
+11,Isabella Clark,30,Female,West,Marketing,140.70,Yes,Home Decor,Express
+12,Noah Rodriguez,27,Male,East,Engineer,160.35,No,Electronics,Standard
+13,Mia Lewis,34,Female,North,Teacher,110.15,Yes,Books,Express
+14,Ethan Walker,38,Male,South,Manager,250.40,No,Clothing,Standard
+15,Charlotte Hall,26,Female,West,Designer,130.85,Yes,Home Decor,Express
+16,Alexander Young,49,Male,East,Doctor,280.95,No,Electronics,Standard
+17,Amelia Allen,21,Female,North,Student,70.20,Yes,Books,Express
+18,Daniel King,33,Male,South,Analyst,145.65,No,Clothing,Standard
+19,Harper Scott,28,Female,West,Engineer,190.50,Yes,Electronics,Express
+20,Henry Green,44,Male,East,Consultant,210.25,No,Home Decor,Standard
+21,Evelyn Adams,24,Female,North,Artist,85.30,Yes,Books,Express
+22,Lucas Baker,36,Male,South,Lawyer,170.80,No,Clothing,Standard
+23,Abigail Nelson,31,Female,West,Marketing,125.90,Yes,Home Decor,Express
+24,Jack Carter,39,Male,East,Teacher,155.45,No,Electronics,Standard
+25,Emily Mitchell,27,Female,North,Designer,135.60,Yes,Books,Express
+26,Benjamin Perez,46,Male,South,Manager,230.75,No,Clothing,Standard
+27,Avery Roberts,22,Female,West,Student,75.15,Yes,Home Decor,Express
+28,Mason Turner,35,Male,East,Engineer,195.20,No,Electronics,Standard
+29,Sofia Phillips,29,Female,North,Analyst,115.30,Yes,Books,Express
+30,Elijah Campbell,40,Male,South,Doctor,270.85,No,Clothing,Standard
+31,Grace Parker,26,Female,West,Marketing,140.40,Yes,Home Decor,Express
+32,Logan Evans,43,Male,East,Consultant,205.65,No,Electronics,Standard
+33,Madison Edwards,23,Female,North,Artist,90.50,Yes,Books,Express
+34,Aiden Collins,37,Male,South,Lawyer,165.25,No,Clothing,Standard
+35,Layla Stewart,30,Female,West,Teacher,120.70,Yes,Home Decor,Express
+36,Samuel Morris,48,Male,East,Manager,240.80,No,Electronics,Standard
+37,Zoey Reed,25,Female,North,Designer,130.95,Yes,Books,Express
+38,David Cook,34,Male,South,Engineer,185.10,No,Clothing,Standard
+39,Penelope Morgan,28,Female,West,Analyst,145.35,Yes,Home Decor,Express
+40,Joseph Bell,41,Male,East,Doctor,275.20,No,Electronics,Standard
+41,Riley Brooks,24,Female,North,Student,80.15,Yes,Books,Express
+42,Carter Cooper,39,Male,South,Consultant,210.50,No,Clothing,Standard
+43,Aria Bailey,27,Female,West,Marketing,135.65,Yes,Home Decor,Express
+44,Owen Rivera,45,Male,East,Teacher,160.30,No,Electronics,Standard
+45,Hannah Cox,29,Female,North,Designer,125.80,Yes,Books,Express
+46,Luke Ward,36,Male,South,Lawyer,170.45,No,Clothing,Standard
+47,Stella Butler,31,Female,West,Engineer,190.90,Yes,Electronics,Express
+48,Isaac Wood,42,Male,East,Manager,235.25,No,Home Decor,Standard
+49,Natalie Fisher,26,Female,North,Artist,95.40,Yes,Books,Express
+50,Grayson Stone,38,Male,South,Analyst,150.60,No,Clothing,Standard
+51,Victoria Gray,24,Female,West,Student,85.75,Yes,Home Decor,Express
+52,Julian Hughes,47,Male,East,Doctor,280.30,No,Electronics,Standard
+53,Hazel West,28,Female,North,Marketing,140.15,Yes,Books,Express
+54,Levi Perry,35,Male,South,Engineer,195.50,No,Clothing,Standard
+55,Lillian Ford,30,Female,West,Teacher,120.25,Yes,Home Decor,Express
+56,Aubrey Myers,27,Female,North,Designer,130.80,Yes,Books,Express
+57,Jaxon Kelly,44,Male,South,Consultant,215.45,No,Electronics,Standard
+58,Ellie Long,23,Female,West,Student,75.90,Yes,Home Decor,Express
+59,Lincoln Foster,39,Male,East,Lawyer,175.60,No,Clothing,Standard
+60,Arianna Price,26,Female,North,Analyst,145.15,Yes,Books,Express
+61,Connor Griffin,41,Male,South,Manager,240.70,No,Electronics,Standard
+62,Savannah Sanders,29,Female,West,Marketing,135.30,Yes,Home Decor,Express
+63,Joshua Ross,36,Male,East,Engineer,190.25,No,Clothing,Standard
+64,Aurora Jenkins,24,Female,North,Artist,90.80,Yes,Books,Express
+65,Christian Marshall,48,Male,South,Doctor,285.40,No,Electronics,Standard
+66,Skylar Ortiz,27,Female,West,Designer,125.95,Yes,Home Decor,Express
+67,Jeremiah Gordon,35,Male,East,Teacher,160.50,No,Clothing,Standard
+68,Clara Wells,30,Female,North,Analyst,140.65,Yes,Books,Express
+69,Tristan Sullivan,42,Male,South,Consultant,210.20,No,Electronics,Standard
+70,Delilah Hayes,25,Female,West,Student,80.35,Yes,Home Decor,Express
+71,Eli Henderson,39,Male,East,Lawyer,170.85,No,Clothing,Standard
+72,Maya Hunter,28,Female,North,Marketing,135.40,Yes,Books,Express
+73,Micah Andrews,46,Male,South,Manager,245.75,No,Electronics,Standard
+74,Nora Hudson,26,Female,West,Designer,130.10,Yes,Home Decor,Express
+75,Aaron Bryant,37,Male,East,Engineer,195.30,No,Clothing,Standard
+76,Lydia Cole,24,Female,North,Artist,90.25,Yes,Books,Express
+77,Isaiah Barnes,43,Male,South,Doctor,280.60,No,Electronics,Standard
+78,Eleanor Russell,29,Female,West,Teacher,120.45,Yes,Home Decor,Express
+79,Hudson Duncan,35,Male,East,Analyst,150.80,No,Clothing,Standard
+80,Aria Peterson,27,Female,North,Student,85.15,Yes,Books,Express
+81,Easton Jordan,40,Male,South,Consultant,215.90,No,Electronics,Standard
+82,Lila Murray,25,Female,West,Marketing,140.25,Yes,Home Decor,Express
+83,Ezra Reid,38,Male,East,Lawyer,175.35,No,Clothing,Standard
+84,Addison Simmons,30,Female,North,Designer,130.70,Yes,Books,Express
+85,Colton Freeman,44,Male,South,Manager,240.15,No,Electronics,Standard
+86,Paisley Pierce,26,Female,West,Artist,95.50,Yes,Home Decor,Express
+87,Evan Berry,36,Male,East,Engineer,190.65,No,Clothing,Standard
+88,Autumn Ford,28,Female,North,Teacher,125.20,Yes,Books,Express
+89,Nathan Hart,41,Male,South,Doctor,285.75,No,Electronics,Standard
+90,Brooklyn Dunn,24,Female,West,Student,80.90,Yes,Home Decor,Express
+91,Adrian Black,39,Male,East,Consultant,210.30,No,Clothing,Standard
+92,Audrey Fox,27,Female,North,Marketing,135.85,Yes,Books,Express
+93,Caleb Gardner,45,Male,South,Manager,245.40,No,Electronics,Standard
+94,Piper Ellis,25,Female,West,Designer,130.95,Yes,Home Decor,Express
+95,Kayden Boyd,37,Male,East,Lawyer,170.50,No,Clothing,Standard
+96,Aliyah Holmes,29,Female,North,Analyst,145.60,Yes,Books,Express
+97,Declan Porter,42,Male,South,Engineer,195.25,No,Electronics,Standard
+98,Sienna Riley,26,Female,West,Student,85.30,Yes,Home Decor,Express
+99,Asher Wallace,34,Male,East,Teacher,160.75,No,Clothing,Standard
+100,Clara Dixon,28,Female,North,Artist,90.40,Yes,Books,Express

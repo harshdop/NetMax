@@ -1,0 +1,101 @@
+ID,Name,Age,Grade,Attendance
+1,John Smith,16,85,95
+,Emma Johnson,,90,92
+3,Michael Brown,17,,88
+4,,15,78,
+5,James Wilson,16,82,90
+6,Olivia Taylor,,88,93
+,William Anderson,17,92,89
+8,Ava Martinez,15,,94
+9,David Thomas,16,80,91
+,Isabella Lee,,85,
+11,Liam Garcia,17,87,90
+12,Mia Rodriguez,15,83,92
+,Noah Clark,,90,88
+14,Emily Lewis,16,,94
+15,Jacob Walker,17,86,91
+16,,15,79,
+17,Ethan Allen,16,84,93
+,Harper Young,,88,90
+19,Alexander King,17,91,
+20,Amelia Wright,15,82,92
+,Daniel Scott,16,,89
+22,Evelyn Green,,85,94
+23,Jack Adams,17,87,
+24,,15,80,91
+25,Henry Gonzalez,16,83,90
+26,Grace Nelson,,89,92
+,Samuel Carter,17,,88
+28,Victoria Mitchell,15,78,94
+29,Joseph Perez,16,84,
+,Lily Roberts,,87,91
+31,Benjamin Turner,17,90,89
+32,,15,,93
+33,Andrew Campbell,16,82,90
+,Hannah Parker,,85,92
+35,Matthew Evans,17,88,
+36,Elizabeth Edwards,15,79,94
+,Joshua Collins,16,,91
+38,Sofia Stewart,,84,90
+39,Christopher Morris,17,86,92
+,,15,80,
+41,Nathan Reed,16,83,94
+42,Zoey Cook,,89,91
+,Logan Morgan,17,91,
+44,Madison Bell,15,,90
+45,Anthony Bailey,16,85,92
+,Addison Cooper,,87,89
+47,Lucas Rivera,17,82,
+48,,15,78,94
+49,Owen Henderson,16,,91
+,Scarlett Coleman,,84,90
+51,Dylan Ward,17,86,92
+52,,15,,89
+53,Luke Gray,16,83,94
+,Aria Sanders,,88,91
+55,Gabriel Ramirez,17,90,
+56,Layla James,15,79,92
+,Aiden Bennett,16,,90
+58,Audrey Foster,,85,94
+59,Jackson Perry,17,87,
+,,15,80,91
+61,Mason Powell,16,84,90
+62,Penelope Long,,89,92
+,Carter Patterson,17,,88
+64,Riley Murphy,15,78,94
+65,,16,83,
+66,Aubrey Cox,,86,91
+67,Jayden Hayes,17,90,89
+,Brooklyn Ford,15,,92
+69,Elijah Watson,16,85,90
+,Skylar Myers,,87,94
+71,Isaac Hunt,17,82,
+72,,15,79,91
+73,Sebastian Black,16,,90
+,Leah Fisher,,84,92
+75,Hunter Gomez,17,88,
+76,Claire Murray,15,80,94
+,Christian Ellis,16,83,91
+78,Lillian Freeman,,89,90
+,Grayson Ford,17,,92
+80,Mila Stone,15,78,89
+81,,16,84,
+82,Allison Hunter,,86,94
+83,Caleb Dixon,17,90,91
+,Aaliyah Wells,15,,90
+85,Julian Foster,16,85,92
+,Kaylee Ortiz,,87,89
+87,Nicholas Dean,17,82,
+88,,15,79,94
+89,Jonathan West,16,,91
+,Aurora Ford,,84,90
+91,Colton Burns,17,88,92
+92,Bella Andrews,15,,89
+,Eli Robertson,16,83,94
+94,Autumn Simmons,,86,91
+95,,17,90,
+96,Ariana Griffin,15,78,92
+,Connor Ford,16,,90
+98,Paisley Hansen,,85,94
+99,Jordan Webb,17,87,
+,,15,80,91

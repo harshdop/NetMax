@@ -1,0 +1,32 @@
+1. Select all columns for the customer with id 15.
+2. Select the first 10 rows and the first 4 columns of the dataset.
+3. Select 'customer_name' and 'purchase_amount' for customers in the North region.
+4. Select the last 15 rows and columns 3 through 6.
+5. Select all columns for customers with purchase_amount greater than 200.
+6. Select every third row from the first 30 rows and columns 0, 2, and 5.
+7. Select 'customer_name', 'age', and 'occupation' for customers with gender 'Female'.
+8. Select the 20th to 25th rows (inclusive) and the last 4 columns.
+9. Select all columns for customers enrolled in the loyalty program (loyalty_program = 'Yes').
+10. Select the first 5 columns for rows 10 to 20.
+11. Select 'customer_name' and 'preferred_category' for customers with purchase_amount above 150.
+12. Select rows 40 to 50 and columns 'customer_name', 'gender', and 'delivery_preference' by their index positions.
+
+	13. Select all columns for customers aged 25 who prefer 'Books' as their category.
+
+14. Select the 6th column for the first 30 rows.
+15. Select 'customer_name', 'purchase_amount', and 'region' for customers with delivery_preference 'Express'.
+16. Select rows 5, 15, 25, 35, and 45 and columns 1, 4, and 7.
+
+	17. Select all columns for customers whose names start with 'S'.
+	
+18. Select the last 8 rows and the first 3 columns.
+
+	19. Select 'customer_name' and 'purchase_amount' for customers with purchase_amount between 100 and 200 (inclusive).
+	
+20. Select every 4th row from 0 to 60 and columns 3, 6, and 9.
+	
+21. Select 'customer_name', 'occupation', and 'loyalty_program' for customers aged between 20 and 30 (inclusive).
+22. Select rows 60 to 70 and the columns corresponding to 'age', 'region', and 'preferred_category'.
+23. Select all columns for customers in the East region with purchase_amount less than 150.
+24. Select the first 12 rows and the last 3 columns.
+25. Select 'customer_name', 'age', and 'delivery_preference' for customers with id in the range 30 to 50.
