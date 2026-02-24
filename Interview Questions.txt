@@ -1,0 +1,31 @@
+Interview Questions
+
+1. Why numpy over python list
+
+2. Create 1D, 2D and 3D
+
+3. Checking Dimensions
+
+4. What is reshaping of array
+       np.flatten()
+
+5. Slicing and indexing of array
+
+7. Adding and removing elements
+       HW: Do it for 3D array
+
+8. Sorting
+       ascend, descend
+       axis
+       Column and row
+       Reverse
+
+9. Vectors and scaling
+      1D Vector
+      Broadcasting
+
+10. Special type of arrays
+
+11. Linear algebra
+
+
