@@ -179,7 +179,7 @@ html, body, [data-testid="stAppViewContainer"] {
 @st.cache_resource
 def load_model():
     try:
-        import tensorflow as tf
+        import keras
         from huggingface_hub import hf_hub_download
 
         hf_token = st.secrets.get("HF_TOKEN", None)
@@ -189,14 +189,13 @@ def load_model():
             filename="oxford_epoch_60.keras",
             token=hf_token,
         )
-        model = tf.keras.models.load_model(model_path)
+        model = keras.models.load_model(model_path)
         return model
     except Exception as e:
         st.error(f"Could not load model: {e}")
         return None
 
 def predict_flower(img: Image.Image, model):
-    import tensorflow as tf
     img_resized = img.resize((299, 299))
     arr = np.array(img_resized.convert("RGB"), dtype=np.float32)
     arr = np.expand_dims(arr, axis=0)
