@@ -1,5 +1,5 @@
 streamlit
-tensorflow-cpu==2.15.1
+tensorflow-cpu==2.20.2
 huggingface_hub
 wikipedia
 plotly
