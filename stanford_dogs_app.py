@@ -264,9 +264,9 @@ def load_model():
         from huggingface_hub import hf_hub_download
         hf_token = st.secrets.get("HF_TOKEN", None)
         model_path = hf_hub_download(
-            repo_id="YOUR_HF_USERNAME/stanford-dogs-xception",  # ← update this
+            repo_id="Harsh-Deep/stanford",  # ← update this
             filename="stanford_dogs_final.keras",
-            token=hf_token,
+            token=st.secrets["HF-TOKEN"],
         )
         model = keras.models.load_model(model_path)
         return model
