@@ -1,0 +1,9 @@
+streamlit
+tensorflow-cpu==2.15.1
+huggingface_hub
+wikipedia
+plotly
+pandas
+pillow
+numpy
+requests
