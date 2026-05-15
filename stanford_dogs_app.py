@@ -670,20 +670,20 @@ def page_result():
 
         st.markdown("<br>", unsafe_allow_html=True)
 
-    # Wikipedia categories as tags
-    if wiki["categories"]:
-        tags_html = " ".join([
-            f'<span style="background:#e0d0bc;border-radius:20px;padding:4px 14px;'
-            f'font-size:0.78rem;color:#5c3d1e;margin:3px;display:inline-block;">'
-            f'{cat.replace("dog breeds", "").replace("dogs", "").strip().title()}</span>'
-            for cat in wiki["categories"] if len(cat) < 60
-        ])
-        st.markdown(f"""
-        <div style="margin-bottom:30px;">
-            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;
-                        color:#7a7a7a;margin-bottom:10px;">Wikipedia Categories</div>
-            {tags_html}
-        </div>""", unsafe_allow_html=True)
+    # # Wikipedia categories as tags
+    # if wiki["categories"]:
+    #     tags_html = " ".join([
+    #         f'<span style="background:#e0d0bc;border-radius:20px;padding:4px 14px;'
+    #         f'font-size:0.78rem;color:#5c3d1e;margin:3px;display:inline-block;">'
+    #         f'{cat.replace("dog breeds", "").replace("dogs", "").strip().title()}</span>'
+    #         for cat in wiki["categories"] if len(cat) < 60
+    #     ])
+    #     st.markdown(f"""
+    #     <div style="margin-bottom:30px;">
+    #         <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;
+    #                     color:#7a7a7a;margin-bottom:10px;">Wikipedia Categories</div>
+    #         {tags_html}
+    #     </div>""", unsafe_allow_html=True)
 
     # ── Model Metrics ──
     st.markdown('<div class="section-title">Model <em>Metrics</em></div>',
@@ -693,10 +693,10 @@ def page_result():
 
     st.markdown("""
     <div class="metric-row">
-        <div class="metric-pill"><div class="num">86%</div><div class="lbl">Val Accuracy</div></div>
-        <div class="metric-pill"><div class="num">0.85</div><div class="lbl">Macro Precision</div></div>
-        <div class="metric-pill"><div class="num">0.85</div><div class="lbl">Macro Recall</div></div>
-        <div class="metric-pill"><div class="num">0.85</div><div class="lbl">Macro F1</div></div>
+        <div class="metric-pill"><div class="num">90%</div><div class="lbl">Val Accuracy</div></div>
+        <div class="metric-pill"><div class="num">0.88</div><div class="lbl">Macro Precision</div></div>
+        <div class="metric-pill"><div class="num">0.88</div><div class="lbl">Macro Recall</div></div>
+        <div class="metric-pill"><div class="num">0.88</div><div class="lbl">Macro F1</div></div>
     </div>""", unsafe_allow_html=True)
 
     # Sample classification report table — REMOVED
