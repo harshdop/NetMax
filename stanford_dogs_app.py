@@ -451,7 +451,7 @@ def page_home():
         <div class="metric-pill"><div class="num">120</div><div class="lbl">Dog Breeds</div></div>
         <div class="metric-pill"><div class="num">12K</div><div class="lbl">Training Images</div></div>
         <div class="metric-pill"><div class="num">60</div><div class="lbl">Epochs Trained</div></div>
-        <div class="metric-pill"><div class="num">~86%</div><div class="lbl">Val Accuracy</div></div>
+        <div class="metric-pill"><div class="num">~90%</div><div class="lbl">Val Accuracy</div></div>
         <div class="metric-pill"><div class="num">299²</div><div class="lbl">Input Resolution</div></div>
     </div>""", unsafe_allow_html=True)
 
