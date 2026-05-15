@@ -506,11 +506,16 @@ def page_home():
                                  line=dict(color="#9b5e2a", width=2.5)))
         fig.add_trace(go.Scatter(x=epochs, y=val_acc, name="Val",
                                  line=dict(color="#c8854a", width=2.5, dash="dot")))
-        fig.update_layout(title="Accuracy", paper_bgcolor="#f8f5f0", plot_bgcolor="#f8f5f0",
-                          font=dict(family="DM Sans", color="#1c1c1c"),
-                          legend=dict(bgcolor="rgba(0,0,0,0)"),
-                          xaxis_title="Epoch", yaxis_title="Accuracy",
-                          margin=dict(l=20,r=20,t=40,b=20))
+        fig.update_layout(
+            title=dict(text="Accuracy", font=dict(size=14, color="#1c1c1c")),
+            paper_bgcolor="#f8f5f0", plot_bgcolor="#f8f5f0",
+            font=dict(family="DM Sans", color="#1c1c1c"),
+            legend=dict(bgcolor="rgba(0,0,0,0)"),
+            xaxis=dict(title="Epoch", showgrid=True, gridcolor="#e8d8c4",
+                       tickmode="linear", dtick=10, tickfont=dict(color="#1c1c1c")),
+            yaxis=dict(title="Accuracy", showgrid=True, gridcolor="#e8d8c4",
+                       tickformat=".0%", tickfont=dict(color="#1c1c1c")),
+            margin=dict(l=60,r=20,t=40,b=40))
         st.plotly_chart(fig, use_container_width=True)
     with col_g2:
         fig2 = go.Figure()
@@ -518,11 +523,16 @@ def page_home():
                                   line=dict(color="#9b5e2a", width=2.5)))
         fig2.add_trace(go.Scatter(x=epochs, y=val_loss, name="Val",
                                   line=dict(color="#c8854a", width=2.5, dash="dot")))
-        fig2.update_layout(title="Loss", paper_bgcolor="#f8f5f0", plot_bgcolor="#f8f5f0",
-                           font=dict(family="DM Sans", color="#1c1c1c"),
-                           legend=dict(bgcolor="rgba(0,0,0,0)"),
-                           xaxis_title="Epoch", yaxis_title="Loss",
-                           margin=dict(l=20,r=20,t=40,b=20))
+        fig2.update_layout(
+            title=dict(text="Loss", font=dict(size=14, color="#1c1c1c")),
+            paper_bgcolor="#f8f5f0", plot_bgcolor="#f8f5f0",
+            font=dict(family="DM Sans", color="#1c1c1c"),
+            legend=dict(bgcolor="rgba(0,0,0,0)"),
+            xaxis=dict(title="Epoch", showgrid=True, gridcolor="#e8d8c4",
+                       tickmode="linear", dtick=10, tickfont=dict(color="#1c1c1c")),
+            yaxis=dict(title="Loss", showgrid=True, gridcolor="#e8d8c4",
+                       tickfont=dict(color="#1c1c1c")),
+            margin=dict(l=60,r=20,t=40,b=40))
         st.plotly_chart(fig2, use_container_width=True)
 
     # ── Architecture ──
@@ -605,14 +615,18 @@ def page_result():
         fig = go.Figure(go.Bar(
             x=confs, y=names, orientation="h",
             marker_color=colors,
-            text=[f"{c:.1f}%" for c in confs], textposition="outside"
+            text=[f"{c:.1f}%" for c in confs], textposition="outside",
+            textfont=dict(color="#5c3d1e", size=13)
         ))
         fig.update_layout(
             paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
             font=dict(family="DM Sans", color="#1c1c1c"),
-            xaxis=dict(range=[0, max(confs)*1.35], showgrid=False),
-            yaxis=dict(autorange="reversed"),
-            margin=dict(l=10,r=70,t=10,b=10), height=260
+            xaxis=dict(range=[0, max(confs)*1.35], showgrid=False,
+                       title="Confidence (%)",
+                       tickfont=dict(color="#5c3d1e")),
+            yaxis=dict(autorange="reversed",
+                       tickfont=dict(color="#5c3d1e", size=13)),
+            margin=dict(l=10,r=70,t=10,b=40), height=260
         )
         st.plotly_chart(fig, use_container_width=True)
 
@@ -625,16 +639,12 @@ def page_result():
     with st.spinner("Fetching breed data from Wikipedia…"):
         wiki = get_dog_wiki(top_name)
 
-    # Summary box
+    # Summary box — full Wikipedia text, no link
     st.markdown(f"""
     <div class="wiki-box">
         <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;
                     color:#9b5e2a;margin-bottom:10px;">Overview</div>
         {wiki['summary']}
-        <div style="font-size:0.75rem;color:#7a7a7a;margin-top:12px;">
-            📖 Source: <a href="{wiki['url']}" target="_blank"
-            style="color:#9b5e2a;">{wiki['url']}</a>
-        </div>
     </div>""", unsafe_allow_html=True)
 
     # Section cards — Origin, Temperament, Appearance, Health
@@ -689,37 +699,10 @@ def page_result():
         <div class="metric-pill"><div class="num">0.85</div><div class="lbl">Macro F1</div></div>
     </div>""", unsafe_allow_html=True)
 
-    # Sample classification report table
-    np.random.seed(15)
-    sample_breeds = [clean_breed_name(b) for b in
-                     np.random.choice(STANFORD_BREEDS, 12, replace=False)]
-    prec = np.clip(np.random.normal(0.85, 0.06, 12), 0.60, 0.99)
-    rec  = np.clip(np.random.normal(0.85, 0.06, 12), 0.60, 0.99)
-    f1s  = 2 * prec * rec / (prec + rec)
-    sup  = np.random.randint(60, 130, 12)
+    # Sample classification report table — REMOVED
+    # Bar chart — REMOVED
 
-    df = pd.DataFrame({
-        "Breed":     sample_breeds,
-        "Precision": prec.round(3),
-        "Recall":    rec.round(3),
-        "F1-Score":  f1s.round(3),
-        "Support":   sup,
-    })
-    st.markdown("**Sample Classification Report** *(12 representative breeds)*")
-    st.dataframe(df.set_index("Breed"), use_container_width=True)
-
-    fig_f1 = px.bar(df, x="Breed", y="F1-Score",
-                    color="F1-Score",
-                    color_continuous_scale=["#e0d0bc","#c8854a","#9b5e2a"],
-                    range_color=[0.6, 1.0],
-                    title="F1-Score per Breed (sample)")
-    fig_f1.update_layout(paper_bgcolor="#f8f5f0", plot_bgcolor="#f8f5f0",
-                         font=dict(family="DM Sans", color="#1c1c1c"),
-                         xaxis_tickangle=-35, coloraxis_showscale=False,
-                         margin=dict(l=10,r=10,t=40,b=100))
-    st.plotly_chart(fig_f1, use_container_width=True)
-
-    # Training curves on result page
+    # Training curves with proper axis labels
     st.markdown("**Training vs Validation Curves**")
     epochs, tr_acc, val_acc, tr_loss, val_loss = get_training_history()
     col_r1, col_r2 = st.columns(2)
@@ -729,11 +712,17 @@ def page_result():
                                 line=dict(color="#9b5e2a", width=2)))
         fa.add_trace(go.Scatter(x=epochs, y=val_acc, name="Val",
                                 line=dict(color="#c8854a", width=2, dash="dot")))
-        fa.update_layout(paper_bgcolor="#f8f5f0", plot_bgcolor="#f8f5f0",
-                         font=dict(family="DM Sans", color="#1c1c1c"),
-                         xaxis_title="Epoch", yaxis_title="Accuracy",
-                         legend=dict(bgcolor="rgba(0,0,0,0)"),
-                         margin=dict(l=10,r=10,t=20,b=20), height=280)
+        fa.update_layout(
+            title=dict(text="Accuracy", font=dict(size=14, color="#1c1c1c")),
+            paper_bgcolor="#f8f5f0", plot_bgcolor="#f8f5f0",
+            font=dict(family="DM Sans", color="#1c1c1c"),
+            xaxis=dict(title="Epoch", showgrid=True, gridcolor="#e8d8c4",
+                       tickmode="linear", dtick=10,
+                       tickfont=dict(color="#1c1c1c")),
+            yaxis=dict(title="Accuracy", showgrid=True, gridcolor="#e8d8c4",
+                       tickformat=".0%", tickfont=dict(color="#1c1c1c")),
+            legend=dict(bgcolor="rgba(0,0,0,0)"),
+            margin=dict(l=60,r=20,t=40,b=40), height=300)
         st.plotly_chart(fa, use_container_width=True)
     with col_r2:
         fl = go.Figure()
@@ -741,11 +730,17 @@ def page_result():
                                 line=dict(color="#9b5e2a", width=2)))
         fl.add_trace(go.Scatter(x=epochs, y=val_loss, name="Val",
                                 line=dict(color="#c8854a", width=2, dash="dot")))
-        fl.update_layout(paper_bgcolor="#f8f5f0", plot_bgcolor="#f8f5f0",
-                         font=dict(family="DM Sans", color="#1c1c1c"),
-                         xaxis_title="Epoch", yaxis_title="Loss",
-                         legend=dict(bgcolor="rgba(0,0,0,0)"),
-                         margin=dict(l=10,r=10,t=20,b=20), height=280)
+        fl.update_layout(
+            title=dict(text="Loss", font=dict(size=14, color="#1c1c1c")),
+            paper_bgcolor="#f8f5f0", plot_bgcolor="#f8f5f0",
+            font=dict(family="DM Sans", color="#1c1c1c"),
+            xaxis=dict(title="Epoch", showgrid=True, gridcolor="#e8d8c4",
+                       tickmode="linear", dtick=10,
+                       tickfont=dict(color="#1c1c1c")),
+            yaxis=dict(title="Loss", showgrid=True, gridcolor="#e8d8c4",
+                       tickfont=dict(color="#1c1c1c")),
+            legend=dict(bgcolor="rgba(0,0,0,0)"),
+            margin=dict(l=60,r=20,t=40,b=40), height=300)
         st.plotly_chart(fl, use_container_width=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
